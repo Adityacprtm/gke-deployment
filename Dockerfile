@@ -1,4 +1,4 @@
-FROM    golang:1.16-alpine AS builder
+FROM    golang:1.16-alpine
 RUN     apk --update --no-cache add git less openssh \
     && rm -rf /var/lib/apk/lists/* \
     && rm -rf /var/cache/apk/*
@@ -40,4 +40,4 @@ RUN     wget https://releases.hashicorp.com/consul-template/0.26.0/consul-templa
     && rm -rf consul-template_0.26.0_linux_amd64.zip \
     /tmp/* \
     /var/tmp/*
-COPY    --from=builder /go/src/github.com/adityacprtm/validtoml/validtoml .
+COPY    --from=0 /go/src/github.com/adityacprtm/validtoml/validtoml .
