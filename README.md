@@ -1,8 +1,9 @@
 # GKE-Deployment
 
-A container to support K8s deployment on GKE
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/adityacprtm/gke-deployment)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/adityacprtm/gke-deployment)
 
-Base image: `alpine:3.14`
+A container to support K8s deployment on GKE
 
 ## Inside
 
