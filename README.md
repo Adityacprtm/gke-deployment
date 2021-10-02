@@ -3,8 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/adityacprtm/gke-deployment)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/adityacprtm/gke-deployment)
+[![Docker](https://github.com/Adityacprtm/gke-deployment/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/Adityacprtm/gke-deployment/actions/workflows/docker-publish.yml)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
