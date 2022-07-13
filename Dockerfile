@@ -9,7 +9,7 @@ RUN     rm -rf vendor \
   && go mod vendor
 RUN     CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o validtoml .
 
-FROM    alpine:3.15
+FROM    alpine:3.16
 RUN     apk update \
   && apk add --update --no-cache curl ca-certificates bash python3 git openssl openssh docker-cli \
   && mkdir /root/.docker \
