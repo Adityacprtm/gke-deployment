@@ -51,4 +51,4 @@ RUN     gcloud auth configure-docker --quiet \
   && rm -rf /tmp/* \
   && rm -rf /var/tmp/*
 # validtoml
-COPY    --from=0 /go/src/github.com/adityacprtm/validtoml/validtoml /usr/local/bin
+COPY    --from=0 /go/src/github.com/martinlindhe/validtoml/validtoml /usr/local/bin
