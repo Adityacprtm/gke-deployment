@@ -10,7 +10,7 @@ RUN     git clone https://github.com/martinlindhe/validtoml.git . \
   && go mod vendor \
   && CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o validtoml .
 
-FROM    alpine:3.16
+FROM    alpine:3.17
 RUN     apk update \
   && apk add --update --no-cache curl tzdata ca-certificates bash python3 git openssl openssh docker-cli unzip \
   && mkdir /root/.docker \
